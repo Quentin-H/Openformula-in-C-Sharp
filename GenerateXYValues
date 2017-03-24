@@ -1,0 +1,33 @@
+using System;
+using System.Collections;
+
+public class GenerateXYValues : MonoBehaviour
+{
+        private float P = 500000;
+        
+        private float Radius;
+        private float Angle;
+        
+        public float a;
+        public float b;
+        public float mOne;
+        public float mTwo;
+        public float nOne;
+        public float nTwo;
+        public float nThree;
+        
+        void GeneratePolar
+        {
+                for (int i = 1; i <= 360; i++)
+                {
+                        () ^ 1/nOne;
+                        Console.WriteLine(i);
+                }
+                ConvertToCartesian;
+        }
+        
+        void ConvertToCartesian
+        {
+        
+        }
+}
