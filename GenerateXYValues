@@ -1,33 +1,43 @@
 using System;
 using System.Collections;
+Using UnityEngine;
 
 public class GenerateXYValues : MonoBehaviour
 {
-        private float P = 500000;
+        private float p = 500000;
         
         private float Radius;
         private float Angle;
+        private Vector2 SpawnPos;
         
-        public float a;
-        public float b;
-        public float mOne;
-        public float mTwo;
+        public float x;
+        public float y;
+        public float a = 1;
+        public float b = 1;
         public float nOne;
-        public float nTwo;
-        public float nThree;
+        public float nTwo = 1;
+        public float nThree = 1;
         
         void GeneratePolar
         {
                 for (int i = 1; i <= 360; i++)
                 {
-                        () ^ 1/nOne;
+                        (((Mathf.Cos((y * p) / 4)/a) ^ nTwo) + ((Mathf.Sin((z * p) / 4) / b) ^ -(1/nOne))) ^ 1/nOne;
+                        Debug.log("Generated Polar")
                         Console.WriteLine(i);
+                        ConvertToCartesian;
                 }
                 ConvertToCartesian;
         }
         
         void ConvertToCartesian
         {
+                
+                Instantiate;
+        }
         
+        void Instantiate
+        {
+                
         }
 }
