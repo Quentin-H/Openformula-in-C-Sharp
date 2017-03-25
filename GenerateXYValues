@@ -4,8 +4,8 @@ Using UnityEngine;
 
 public class GenerateXYValues : MonoBehaviour
 {
-        private float p = 500000;
-        
+        public GameObject spawnedGameObject;
+
         private float Radius;
         private float Angle;
         private Vector2 SpawnPos;
@@ -22,9 +22,12 @@ public class GenerateXYValues : MonoBehaviour
         {
                 for (int i = 1; i <= 360; i++)
                 {
-                        (((Mathf.Cos((y * p) / 4)/a) ^ nTwo) + ((Mathf.Sin((z * p) / 4) / b) ^ -(1/nOne))) ^ 1/nOne;
+                        Angle = i;
+                        Radius = ((Mathf.Cos((y * Angle) / 4)/a) ^ nTwo) + ((Mathf.Sin((z * Angle) / 4) / b) ^ -(1/nOne))) ^ 1/nOne);
+                        
                         Debug.log("Generated Polar")
-                        Console.WriteLine(i);
+                        Console.log(i);
+                        
                         ConvertToCartesian;
                 }
                 ConvertToCartesian;
@@ -32,12 +35,21 @@ public class GenerateXYValues : MonoBehaviour
         
         void ConvertToCartesian
         {
+                float x = 0;
+                float y = 0;
                 
+                x = Radius * Mathf.Cos(Angle)
+                y = Radius * Mathf.Sin(Angle)
+                
+                SpawnPos.Set(x,y);
+                
+                Debug.log("ConvertedToCartesian");
                 Instantiate;
         }
         
         void Instantiate
         {
-                
+                Instantiate(spawnedGameObject, SpawnPos, Quaternion.identity);
+                Debug.log("Instantiated");
         }
 }
