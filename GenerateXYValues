@@ -25,12 +25,12 @@ public class GenerateXYValues : MonoBehaviour
                         Angle = i;
                         Radius = ((Mathf.Cos((y * Angle) / 4)/a) ^ nTwo) + ((Mathf.Sin((z * Angle) / 4) / b) ^ -(1/nOne))) ^ 1/nOne);
                         
-                        Debug.log("Generated Polar")
+                        Debug.log("Generated Polar");
                         Console.log(i);
                         
                         ConvertToCartesian;
                 }
-                ConvertToCartesian;
+                ConvertToCartesian();
         }
         
         void ConvertToCartesian
@@ -38,13 +38,13 @@ public class GenerateXYValues : MonoBehaviour
                 float x = 0;
                 float y = 0;
                 
-                x = Radius * Mathf.Cos(Angle)
-                y = Radius * Mathf.Sin(Angle)
+                x = Radius * Mathf.Cos(Angle);
+                y = Radius * Mathf.Sin(Angle);
                 
                 SpawnPos.Set(x,y);
                 
                 Debug.log("ConvertedToCartesian");
-                Instantiate;
+                Instantiate();
         }
         
         void Instantiate
