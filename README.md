@@ -1,3 +1,3 @@
-# Openformula-in-C-Sharp
+# Superformula In C#
 
-A script that generates shapes based on an imitation of the superformula, but heavily modified, to as not to infringe on the patent.
+Implementation of the Superformula in C#.
