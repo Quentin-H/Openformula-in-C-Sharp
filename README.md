@@ -1,3 +1,3 @@
-# Superformula In C#
+# SuperShapes Library In C#
 
-Implementation of the Superformula in C#.
+Implementation of the Superformula, supereelipses and other similar plotting functions in C#.
